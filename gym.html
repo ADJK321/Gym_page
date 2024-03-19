@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MODI'S GYM</title>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Croissant+One&family=Dancing+Script:wght@500&display=swap");
+
+      /* CSS RESET */
+      body {
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url(img_4.jpg);
+        background-size: cover;
+        font-family: "Croissant One", cursive;
+      }
+
+      .left {
+        /* border: 4px solid green; */
+        display: inline-block;
+        position: absolute;
+        left: 0px;
+        top: 30px;
+      }
+
+      .left img {
+        width: 135px;
+        filter: invert(100%);
+        padding: 2px 33px;
+      }
+
+      .logo {
+        text-align: center;
+        font-size: 30px;
+        margin: -12px 8px;
+      }
+
+      .mid {
+        /* border: 4px solid blue; */
+        /* for centre */
+        display: block;
+        width: 500px;
+        margin: 30px auto;
+      }
+      .right {
+        /* border: 4px solid yellow; */
+        display: inline-block;
+        position: absolute;
+        right: 0px;
+        top: 30px;
+      }
+
+      .navbar {
+        display: inline-block;
+      }
+
+      .navbar li {
+        display: inline-block;
+        font-size: larger;
+      }
+
+      .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 20px 10px;
+      }
+
+      .navbar li a.active,
+      .navbar li a:hover {
+        text-decoration: underline;
+        color: aqua;
+      }
+
+      .btn:hover {
+        color: violet;
+        text-decoration: wavy;
+        cursor: pointer;
+        border-radius: 5px;
+        background-color: aliceblue;
+      }
+
+      .btn {
+        margin: 10px 10px;
+        background-color: rgb(183, 184, 168);
+        /* border: solid burlywood 4px; */
+        padding: auto;
+        font-family: "Dancing Script", cursive;
+      }
+
+      .container {
+        border: solid 4px #0099ff3b;
+        margin: 172px 59px;
+        font-size: large;
+        font-style: initial;
+        color: darkorchid;
+        padding: 25px;
+        height: 235px;
+      }
+
+      .summit {
+        display: block;
+        float: right;
+        margin: 11px 30px;
+        width: 90px;
+        border: 5px solid gray;
+        border-radius: 18px;
+      }
+
+      .summit:hover {
+        cursor: pointer;
+        background-color: darkgoldenrod;
+      }
+
+      .form_group2 input {
+        text-align: center;
+        padding: 5px;
+        display: block;
+        width: 150px;
+        margin: 9px 356px;
+        border: solid darkolivegreen 3px;
+        border-radius: 7px;
+      }
+      .form_group1 input {
+        text-align: center;
+        padding: 5px;
+        display: block;
+        width: 150px;
+        margin: 12px 46px;
+        border: solid darkolivegreen 3px;
+        border-radius: 7px;
+      }
+      .form_group3 input {
+        text-align: center;
+        padding: 5px;
+        display: block;
+        width: 150px;
+        margin: 2px 646px;
+        border: solid darkolivegreen 3px;
+        border-radius: 7px;
+      }
+
+      #head {
+        text-align: 76px;
+        display: block;
+        width: 600px;
+        margin: auto 369px;
+        margin-top: 4px;
+        text-decoration: underline;
+        font-size: -webkit-xxx-large;
+      }
+
+      .form_group1 :hover {
+        background-color: bisque;
+        border: 5px solid red;
+      }
+      .form_group2 :hover {
+        background-color: bisque;
+        border: 5px solid red;
+      }
+      .form_group3 :hover {
+        background-color: bisque;
+        border: 5px solid red;
+      }
+
+      /* .form_group :hover{
+       color: cornsilk;
+     } */
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <!-- for logo -->
+      <div class="left">
+        <img src="img_logo.jpg" alt="" />
+        <div class="logo">MODI'S GYM</div>
+      </div>
+
+      <!-- for navbar -->
+      <div class="mid">
+        <ul class="navbar">
+          <li><a href="" class="active">Home</a></li>
+          <li><a href="">Virtual View</a></li>
+          <li><a href="">Enroll</a></li>
+          <li><a href="">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- for buttons -->
+      <div class="right">
+        <button class="btn">PRODUCTS</button>
+        <button class="btn">Email Us</button>
+      </div>
+    </header>
+
+    <div class="container">
+      <h2 id="head">FILL THE FORM</h2>
+      <form action="noaction.php">
+        <div class="form_group1">
+          <input type="text" name="" placeholder="ENTER YOUR NAME" />
+        </div>
+        <div class="form_group2">
+          <input type="text" name="" placeholder="ENTER YOUR PH.NO." />
+        </div>
+        <div class="form_group3">
+          <input type="number" name="" placeholder="ENTER YOUR AGE" />
+        </div>
+        <button class="summit">SUMMIT</button>
+      </form>
+    </div>
+  </body>
+</html>
